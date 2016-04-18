@@ -1,0 +1,317 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="groupTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="40, 3, 0, 3" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+    
+    <Style x:Key="groupItemStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 3" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="FontWeight" Value="Bold" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="groupListBoxStyle" TargetType="{x:Type ListBox}">
+        <Style.Resources>
+            <!-- Background of selected item when focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DodgerBlue" />
+            <!-- Background of selected item when not focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="DodgerBlue" />
+        </Style.Resources>
+    </Style>
+    
+    <Style x:Key="mainWindowPartTitle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <Style x:Key="stockPanelTitle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="recordsStackTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="recordsStackSubTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="groupWindowLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="cardWindowLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="cardNameStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 3" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="300" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="FontWeight" Value="Bold" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="cardCodeJKStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 3" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="100" />
+    </Style>
+
+    <Style x:Key="cardStockStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="15" />
+    </Style>
+
+    <Style x:Key="cardTitleNameStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="300" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="cardTitleCodeJKStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="cardTitleStockStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="cardStockUnitStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="20" />
+    </Style>
+
+    <Style x:Key="cardListBoxStyle" TargetType="{x:Type ListBox}">
+        <Style.Resources>
+            <!-- Background of selected item when focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DodgerBlue" />
+            <!-- Background of selected item when not focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="DodgerBlue" />
+        </Style.Resources>
+        <Setter Property="BorderThickness" Value="3" />
+        <Setter Property="Margin" Value="5" />
+    </Style>
+
+    <Style x:Key="recordListBoxStyle" TargetType="{x:Type ListBox}">
+        <Style.Resources>
+            <!-- Background of selected item when focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DodgerBlue" />
+            <!-- Background of selected item when not focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="DodgerBlue" />
+        </Style.Resources>
+        <Setter Property="BorderThickness" Value="3" />
+        <Setter Property="Margin" Value="5" />
+    </Style>
+
+    <Style x:Key="recordsTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+    </Style>
+
+    <Style x:Key="recordItemStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="80" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="3" />
+    </Style>
+
+    <Style x:Key="recordWindowLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="selectYearWindowLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="stockGroupNameStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="300" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="stockGroupPriceStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="stockGroupCountStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 5" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="stockPriceTitleStyle" TargetType="{x:Type StackPanel}">
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="Width" Value="450" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Background" Value="LightGray" />
+    </Style>
+
+    <Style x:Key="stockCountAndPriceTitleStyle" TargetType="{x:Type StackPanel}">
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="Width" Value="550" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Background" Value="LightGray" />
+    </Style>
+
+    <Style x:Key="stockItemNameStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="300" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="3,3,30,3" />
+    </Style>
+
+    <Style x:Key="stockItemCountStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="60" />
+        <Setter Property="Margin" Value="3,3,55,3" />
+    </Style>
+
+    <Style x:Key="stockItemPriceStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Width" Value="80" />
+        <Setter Property="Margin" Value="3" />
+    </Style>
+
+    <Style x:Key="stockSummaryTitleStyle" TargetType="{x:Type StackPanel}">
+        <Setter Property="Margin" Value="2, 2, 2, 30" />
+        <Setter Property="Width" Value="550" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Background" Value="LightGray" />
+    </Style>
+
+    <Style x:Key="customersTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="40, 3, 0, 3" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <Style x:Key="customerItemStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="10, 3" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="FontWeight" Value="Bold" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="customerListBoxStyle" TargetType="{x:Type ListBox}">
+        <Style.Resources>
+            <!-- Background of selected item when focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DodgerBlue" />
+            <!-- Background of selected item when not focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="DodgerBlue" />
+        </Style.Resources>
+    </Style>
+    
+    <Style x:Key="customerInfoTitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="customerRecordDateStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="5, 3, 10, 3" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <Style x:Key="customerRecordTextStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <Style x:Key="customerInfoValueStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="customerRecordListBoxStyle" TargetType="{x:Type ListBox}">
+        <Style.Resources>
+            <!-- Background of selected item when focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="DodgerBlue" />
+            <!-- Background of selected item when not focussed -->
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="DodgerBlue" />
+        </Style.Resources>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="Black" />
+    </Style>
+
+    <Style x:Key="customerWindowLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="customerRecordWindowLabelStyle" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="3" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+</ResourceDictionary>

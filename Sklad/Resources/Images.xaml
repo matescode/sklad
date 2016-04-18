@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:Class="Images"
+                    x:ClassModifier="public">
+    <ImageSource x:Key="icon_add">add.png</ImageSource>
+    <ImageSource x:Key="icon_exit">exit.png</ImageSource>
+    <ImageSource x:Key="icon_print">print.png</ImageSource>
+    <ImageSource x:Key="icon_question">question_mark.png</ImageSource>
+    <ImageSource x:Key="icon_help">help.png</ImageSource>
+    <ImageSource x:Key="icon_find">find.png</ImageSource>
+    <ImageSource x:Key="icon_save">save.png</ImageSource>
+    <ImageSource x:Key="icon_about">about.png</ImageSource>
+    <ImageSource x:Key="icon_edit">edit.png</ImageSource>
+    <ImageSource x:Key="icon_no">no.png</ImageSource>
+    <ImageSource x:Key="icon_application">sklad.ico</ImageSource>
+    <ImageSource x:Key="icon_add_record">add_record.png</ImageSource>
+    <ImageSource x:Key="icon_remove_record">remove_record.png</ImageSource>
+    <ImageSource x:Key="icon_stock">stock.png</ImageSource>
+    <ImageSource x:Key="image_application">app_image.png</ImageSource>
+    
+</ResourceDictionary>

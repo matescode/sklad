@@ -1,0 +1,99 @@
+﻿****************************
+* TODO list projektu Sklad *
+****************************
+
+10. zakaznici
+ok - preneset data
+ok - rozjet wewb
+ok - model
+ok - novy tab
+ok  - menu
+ok - seznam zakazniku
+ok - info o zakaznikovi
+ok - seznam zaznamu
+ok - pridat zakaznika
+ok - editovat zakaznika
+ok - smazat zakaznika
+ok - pridat zaznamy k zakaznikovy
+ok - editovat zaznamy zakaznika
+ok - smazat zaznamy zakaznika
+
+ok - upravit ukoncovaci save - ukladat, jen kdyz reknu Ano
+ok - odkomentovat zavirani okna
+
+
+**********
+* Hotovo *
+**********
+
+1. zakladni
+ok - hlavni okno aplikace
+ok - ikona
+ok - fluent knihovna
+ok - obrazky do Resource slozky
+ok - Resource file -> Images.xaml
+ok - soubor Styles.xaml
+
+2. core projekt
+ok - zalozeni core-projektu
+
+3. data
+ok - prevest barvy do RGB
+ok - model
+ok - nacitani dat
+ok - ukladani dat
+
+4. skupiny
+ok - layout hlavniho okna
+ok - zobrazeni typu
+- sprava skupiny
+  ok - dialog
+  ok - pridavani
+  ok - editace
+  ok - mazani
+
+5. karty
+ok - zobrazeni karet
+ok - menu
+ - sprava karet
+  ok - dialog
+  ok - pridavani
+  ok - editace
+  ok - mazani
+
+6. zaznamy
+ok - zobrazeni zaznamu
+  ok - zobrazeni poznamky
+ok - menu
+- sprava zaznamu
+  ok - dialog
+  ok - pridavani
+  ok - editace
+  ok - mazani
+
+7. stav zasob
+ok - okno pro vyber roku
+ok - nove obrazky pro stav
+ok - stav po danem roce
+ok - tabulka se souctem
+  ok - titulek
+  ok - data
+ok - stav pro dany rok
+  ok - titulek
+  ok - data
+ok - aktualni stav zasob
+  ok - titulek
+  ok - data
+
+8. tisk
+ok - tiskove sestavy pro:
+ok  - seznam karet
+ok  - stavy zasob
+
+9.poznamky
+ok - nove data
+ok - about okno
+ok - nastavit spravne ukladani
+ok - ukonceni programu
+ok - klavesove zkratky
+ok - komentare

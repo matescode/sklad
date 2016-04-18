@@ -1,0 +1,52 @@
+﻿<Window x:Class="Sklad.Windows.CustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CustomerWindow" Height="210" Width="670"
+        ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140" />
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition Width="140" />
+            <ColumnDefinition Width="180" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Jméno a příjmení" Grid.Column="0" Grid.Row="0" Style="{StaticResource ResourceKey=customerWindowLabelStyle}" />
+        <Label Content="Kotel" Grid.Column="0" Grid.Row="1" Style="{StaticResource ResourceKey=customerWindowLabelStyle}" />
+
+        <Label Content="Telefon" Grid.Column="2" Grid.Row="0" Style="{StaticResource ResourceKey=customerWindowLabelStyle}" />
+        <Label Content="Datum spuštění" Grid.Column="2" Grid.Row="1" Style="{StaticResource ResourceKey=customerWindowLabelStyle}" />
+
+        <Label Content="Adresa" Grid.Column="0" Grid.Row="2" Style="{StaticResource ResourceKey=customerWindowLabelStyle}" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4">
+            <Button Name="okButton"
+                    Content="OK"
+                    Click="okButton_Click"
+                    Width="60"
+                    Height="30"
+                    Margin="5" />
+
+            <Button Name="cancelButton"
+                    Content="Storno"
+                    Click="cancelButton_Click"
+                    Width="60"
+                    Height="30" />
+        </StackPanel>
+
+        <TextBox Name="nameTextBox" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1" Height="25" Margin="5" />
+
+        <TextBox Name="phoneTextBox" HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="3" Height="25" Margin="5" />
+        
+        <TextBox Name="furnaceTextBox" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" Height="25" Margin="5" />
+        <DatePicker Grid.Column="3" Grid.Row="1" Height="25" HorizontalAlignment="Stretch" Margin="5" Name="startDatePicker" VerticalAlignment="Center" />
+
+        <TextBox Name="addressTextBox" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Height="25" Margin="5" />
+    </Grid>
+</Window>
